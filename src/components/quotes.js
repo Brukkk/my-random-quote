@@ -13,7 +13,7 @@ const quotes = () => {
 
             <div className="buttons">
                 <div className="social-media">
-                    <a href="#" id="tweet-quote">
+                    <a target="_blank" href="twitter.com/intent/tweet" id="tweet-quote">
                         <SiTwitter className="icon" />
                     </a>
                 </div>
