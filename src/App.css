@@ -1,10 +1,86 @@
-h1 {
-    font-size: 3rem;
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-dark-blue-4: #03045e;
+    --clr-dark-blue-3: #023e8a;
+    --clr-dark-blue-2: #0077b6;
+    --clr-dark-blue-1: #0096c7;
+    --clr-blue-main : #00b4d8;
+    --clr-light-blue-1: #48cae4;
+    --clr-light-blue-2: #90e0ef;
+    --clr-light-blue-3: #ade8f4;
+    --clr-light-blue-4: #caf0f8;
+    
+}
+body{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    background-color: var(--clr-light-blue-3);
+    color: var(--clr-light-blue-4);
+
 }
 
 .container{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 20vh auto;
+    background-color: var(--clr-dark-blue-4);
+    padding: 3rem;
+    min-width: 300px;
+    max-width: 960px;
+}
+
+#text{
+    font-size: 1.50rem;
+    margin-bottom: 0.5em;
+}
+
+#author{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5em;
+}
+
+#author::before{
+    content: "-";
+    margin-right: 1em;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.social-media{
+    display: flex;
+}
+
+.icon{
+    width:30px;
+    height: 100%;
+    
+    color: var(--clr-light-blue-4);
+    cursor: pointer;
+    background-color: var(--clr-dark-blue-1);
+    padding: 0.3em;
+    
+}
+
+#new-quote{
+    background-color: var(--clr-dark-blue-1);
+    color: var(--clr-light-blue-4);
+    padding: 0.5em 0.75rem;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 3px;
+
 }

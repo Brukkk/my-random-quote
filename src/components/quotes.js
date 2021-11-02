@@ -1,4 +1,5 @@
 import React from 'react';
+import { SiTwitter } from "react-icons/si";
 
 const quotes = () => {
     return (
@@ -13,7 +14,7 @@ const quotes = () => {
             <div className="buttons">
                 <div className="social-media">
                     <a href="#" id="tweet-quote">
-                        <span><img src="" alt="Twitter button" /></span>
+                        <SiTwitter className="icon" />
                     </a>
                 </div>
                 <button id="new-quote">New Quote</button>
